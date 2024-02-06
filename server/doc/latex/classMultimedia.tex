@@ -1,0 +1,270 @@
+\hypertarget{classMultimedia}{}\doxysection{Multimedia Class Reference}
+\label{classMultimedia}\index{Multimedia@{Multimedia}}
+
+
+This class represents a multimedia object.  
+
+
+
+
+{\ttfamily \#include $<$Multimedia.\+h$>$}
+
+
+
+Inheritance diagram for Multimedia\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMultimedia_a7106753d618df92d53b89328b7ecfe7f}\label{classMultimedia_a7106753d618df92d53b89328b7ecfe7f}} 
+\mbox{\hyperlink{classMultimedia_a7106753d618df92d53b89328b7ecfe7f}{Multimedia}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMultimedia_a6e6069c83c66074a15079f8ea44523e6}{Multimedia}} (std\+::string name, std\+::string file\+Path)
+\begin{DoxyCompactList}\small\item\em Parameterized constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMultimedia_ab97f71237bc4dbfc515c69ffcc279f63}{Multimedia}} (const \mbox{\hyperlink{classMultimedia}{Multimedia}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMultimedia_ab280f9ce1d0a1291c9b1ab876e854c94}\label{classMultimedia_ab280f9ce1d0a1291c9b1ab876e854c94}} 
+virtual \mbox{\hyperlink{classMultimedia_ab280f9ce1d0a1291c9b1ab876e854c94}{$\sim$\+Multimedia}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classMultimedia_a6105129da1041cc546f67fbd79f244f4}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Get the name of the multimedia object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMultimedia_ae7587faa573715bcbaa786a0d83f4871}{set\+Name}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Set the name of the multimedia object. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classMultimedia_a0dd6316de95aaecc588510a315388b5e}{get\+File\+Path}} () const
+\begin{DoxyCompactList}\small\item\em Get the file path of the multimedia object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMultimedia_a0899f4d738df24e7c01b26dc26e510a1}{set\+File\+Path}} (std\+::string file\+Path)
+\begin{DoxyCompactList}\small\item\em Set the file path of the multimedia object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classMultimedia_acc0ac0f04fd67622cff94bf883ec4c82}{display}} (std\+::ostream \&os) const
+\begin{DoxyCompactList}\small\item\em Display the multimedia object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classMultimedia_a1fa4ae371afc516559955b38e0392acb}{play}} () const =0
+\begin{DoxyCompactList}\small\item\em Play the multimedia object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classMultimedia_a4b6622a1359f5beabf2c56fd126f1f45}{serialize}} (std\+::ostream \&os) const
+\begin{DoxyCompactList}\small\item\em Serialize the multimedia object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classMultimedia_a3a1b5a97c0b151ea3ed70e254a47ad5f}{deserialize}} (std\+::istream \&is)
+\begin{DoxyCompactList}\small\item\em Deserialize the multimedia object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{classMultimedia_a59c7292d1687a106b237fae69e69632c}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{classMultimedia}{Multimedia}} \&obj)
+\begin{DoxyCompactList}\small\item\em Output stream operator overload. \end{DoxyCompactList}\item 
+std\+::istream \& \mbox{\hyperlink{classMultimedia_afa8716190680493027a35cfa954d2aab}{operator$>$$>$}} (std\+::istream \&is, \mbox{\hyperlink{classMultimedia}{Multimedia}} \&obj)
+\begin{DoxyCompactList}\small\item\em Input stream operator overload. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents a multimedia object. 
+
+It contains a name and a file path, and provides methods for displaying and playing the object. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMultimedia_a6e6069c83c66074a15079f8ea44523e6}\label{classMultimedia_a6e6069c83c66074a15079f8ea44523e6}} 
+\index{Multimedia@{Multimedia}!Multimedia@{Multimedia}}
+\index{Multimedia@{Multimedia}!Multimedia@{Multimedia}}
+\doxysubsubsection{\texorpdfstring{Multimedia()}{Multimedia()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Multimedia\+::\+Multimedia (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{file\+Path }\end{DoxyParamCaption})}
+
+
+
+Parameterized constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the multimedia object. \\
+\hline
+{\em file\+Path} & The file path of the multimedia object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMultimedia_ab97f71237bc4dbfc515c69ffcc279f63}\label{classMultimedia_ab97f71237bc4dbfc515c69ffcc279f63}} 
+\index{Multimedia@{Multimedia}!Multimedia@{Multimedia}}
+\index{Multimedia@{Multimedia}!Multimedia@{Multimedia}}
+\doxysubsubsection{\texorpdfstring{Multimedia()}{Multimedia()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Multimedia\+::\+Multimedia (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMultimedia}{Multimedia}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Copy constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other multimedia object to copy from. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMultimedia_a3a1b5a97c0b151ea3ed70e254a47ad5f}\label{classMultimedia_a3a1b5a97c0b151ea3ed70e254a47ad5f}} 
+\index{Multimedia@{Multimedia}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!Multimedia@{Multimedia}}
+\doxysubsubsection{\texorpdfstring{deserialize()}{deserialize()}}
+{\footnotesize\ttfamily void Multimedia\+::deserialize (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Deserialize the multimedia object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & The input stream to deserialize the information from. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classVideo_a478aee7ec0c381c1694c6e757ebf3d68}{Video}}, and \mbox{\hyperlink{classPhoto_af28440333a7879a942c16f493beae226}{Photo}}.
+
+\mbox{\Hypertarget{classMultimedia_acc0ac0f04fd67622cff94bf883ec4c82}\label{classMultimedia_acc0ac0f04fd67622cff94bf883ec4c82}} 
+\index{Multimedia@{Multimedia}!display@{display}}
+\index{display@{display}!Multimedia@{Multimedia}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void Multimedia\+::display (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Display the multimedia object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & The output stream to display the information to. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classVideo_a5aa5abf5dc093c7eecab97f9cd30555d}{Video}}, \mbox{\hyperlink{classPhoto_a8bfc54f6bb210e3fcbd7b5c501e38053}{Photo}}, and \mbox{\hyperlink{classFilm_a441f4fb605a7d46b906678c87040d707}{Film}}.
+
+\mbox{\Hypertarget{classMultimedia_a0dd6316de95aaecc588510a315388b5e}\label{classMultimedia_a0dd6316de95aaecc588510a315388b5e}} 
+\index{Multimedia@{Multimedia}!getFilePath@{getFilePath}}
+\index{getFilePath@{getFilePath}!Multimedia@{Multimedia}}
+\doxysubsubsection{\texorpdfstring{getFilePath()}{getFilePath()}}
+{\footnotesize\ttfamily std\+::string Multimedia\+::get\+File\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the file path of the multimedia object. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string The file path of the multimedia object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMultimedia_a6105129da1041cc546f67fbd79f244f4}\label{classMultimedia_a6105129da1041cc546f67fbd79f244f4}} 
+\index{Multimedia@{Multimedia}!getName@{getName}}
+\index{getName@{getName}!Multimedia@{Multimedia}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Multimedia\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the name of the multimedia object. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string The name of the multimedia object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMultimedia_a1fa4ae371afc516559955b38e0392acb}\label{classMultimedia_a1fa4ae371afc516559955b38e0392acb}} 
+\index{Multimedia@{Multimedia}!play@{play}}
+\index{play@{play}!Multimedia@{Multimedia}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily virtual void Multimedia\+::play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Play the multimedia object. 
+
+This is a pure virtual function that must be implemented by derived classes. 
+
+Implemented in \mbox{\hyperlink{classVideo_a89e11497f4f200f387805b10bd42922d}{Video}}, and \mbox{\hyperlink{classPhoto_a98b55224b5f9bd016cb08aa2e9a64e46}{Photo}}.
+
+\mbox{\Hypertarget{classMultimedia_a4b6622a1359f5beabf2c56fd126f1f45}\label{classMultimedia_a4b6622a1359f5beabf2c56fd126f1f45}} 
+\index{Multimedia@{Multimedia}!serialize@{serialize}}
+\index{serialize@{serialize}!Multimedia@{Multimedia}}
+\doxysubsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily void Multimedia\+::serialize (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Serialize the multimedia object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & The output stream to serialize the information to. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classVideo_a3ba3f30f038a6399fb2293266a6fdab5}{Video}}, and \mbox{\hyperlink{classPhoto_a0072d71a24fb6865f4ab88d1beb83f32}{Photo}}.
+
+\mbox{\Hypertarget{classMultimedia_a0899f4d738df24e7c01b26dc26e510a1}\label{classMultimedia_a0899f4d738df24e7c01b26dc26e510a1}} 
+\index{Multimedia@{Multimedia}!setFilePath@{setFilePath}}
+\index{setFilePath@{setFilePath}!Multimedia@{Multimedia}}
+\doxysubsubsection{\texorpdfstring{setFilePath()}{setFilePath()}}
+{\footnotesize\ttfamily void Multimedia\+::set\+File\+Path (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+Path }\end{DoxyParamCaption})}
+
+
+
+Set the file path of the multimedia object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & The new file path of the multimedia object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMultimedia_ae7587faa573715bcbaa786a0d83f4871}\label{classMultimedia_ae7587faa573715bcbaa786a0d83f4871}} 
+\index{Multimedia@{Multimedia}!setName@{setName}}
+\index{setName@{setName}!Multimedia@{Multimedia}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Multimedia\+::set\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Set the name of the multimedia object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The new name of the multimedia object. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classMultimedia_a59c7292d1687a106b237fae69e69632c}\label{classMultimedia_a59c7292d1687a106b237fae69e69632c}} 
+\index{Multimedia@{Multimedia}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Multimedia@{Multimedia}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{classMultimedia}{Multimedia}} \&}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Output stream operator overload. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & The output stream. \\
+\hline
+{\em obj} & The multimedia object to output. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::ostream\& The output stream. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMultimedia_afa8716190680493027a35cfa954d2aab}\label{classMultimedia_afa8716190680493027a35cfa954d2aab}} 
+\index{Multimedia@{Multimedia}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Multimedia@{Multimedia}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily std\+::istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{classMultimedia}{Multimedia}} \&}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Input stream operator overload. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & The input stream. \\
+\hline
+{\em obj} & The multimedia object to input. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::istream\& The input stream. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Multimedia_8h}{Multimedia.\+h}}\item 
+Multimedia.\+cpp\end{DoxyCompactItemize}

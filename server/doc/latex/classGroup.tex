@@ -1,0 +1,98 @@
+\hypertarget{classGroup}{}\doxysection{Group Class Reference}
+\label{classGroup}\index{Group@{Group}}
+
+
+This class represents a group of multimedia objects.  
+
+
+
+
+{\ttfamily \#include $<$Group.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGroup_a10fc62dd92115677976891017a943e00}{Group}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Parameterized constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGroup_ac9cf0d77cd3cc950112b0b99c29b15a8}{push\+\_\+back}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classMultimedia}{Multimedia}} $>$ object)
+\begin{DoxyCompactList}\small\item\em Add an object to the group. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGroup_a48b2df7b03ec8d631272812041017a78}{remove}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classMultimedia}{Multimedia}} $>$ object)
+\begin{DoxyCompactList}\small\item\em Remove a specific object from the group. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGroup_a661faafa833aa92388499c5f43d34dfa}{display}} (std\+::ostream \&os) const
+\begin{DoxyCompactList}\small\item\em Display the attributes of all objects in the group. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents a group of multimedia objects. 
+
+It contains a name and a list of shared pointers to multimedia objects. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGroup_a10fc62dd92115677976891017a943e00}\label{classGroup_a10fc62dd92115677976891017a943e00}} 
+\index{Group@{Group}!Group@{Group}}
+\index{Group@{Group}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{Group()}{Group()}}
+{\footnotesize\ttfamily Group\+::\+Group (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Parameterized constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the group. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGroup_a661faafa833aa92388499c5f43d34dfa}\label{classGroup_a661faafa833aa92388499c5f43d34dfa}} 
+\index{Group@{Group}!display@{display}}
+\index{display@{display}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void Group\+::display (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Display the attributes of all objects in the group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & The output stream to display the information to. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGroup_ac9cf0d77cd3cc950112b0b99c29b15a8}\label{classGroup_ac9cf0d77cd3cc950112b0b99c29b15a8}} 
+\index{Group@{Group}!push\_back@{push\_back}}
+\index{push\_back@{push\_back}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{push\_back()}{push\_back()}}
+{\footnotesize\ttfamily void Group\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classMultimedia}{Multimedia}} $>$}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add an object to the group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & The object to add. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGroup_a48b2df7b03ec8d631272812041017a78}\label{classGroup_a48b2df7b03ec8d631272812041017a78}} 
+\index{Group@{Group}!remove@{remove}}
+\index{remove@{remove}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily void Group\+::remove (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classMultimedia}{Multimedia}} $>$}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remove a specific object from the group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & The object to remove. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Group_8h}{Group.\+h}}\end{DoxyCompactItemize}

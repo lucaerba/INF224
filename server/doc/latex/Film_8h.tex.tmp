@@ -1,0 +1,22 @@
+\hypertarget{Film_8h}{}\doxysection{Film.\+h File Reference}
+\label{Film_8h}\index{Film.h@{Film.h}}
+
+
+This file contains the \mbox{\hyperlink{classFilm}{Film}} class.  
+
+
+{\ttfamily \#include \char`\"{}Video.\+h\char`\"{}}\newline
+Include dependency graph for Film.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classFilm}{Film}}
+\begin{DoxyCompactList}\small\item\em This class represents a film. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the \mbox{\hyperlink{classFilm}{Film}} class. 
+

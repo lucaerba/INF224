@@ -1,0 +1,118 @@
+\hypertarget{classPhoto}{}\doxysection{Photo Class Reference}
+\label{classPhoto}\index{Photo@{Photo}}
+
+
+Inheritance diagram for Photo\+:
+% FIG 0
+
+
+Collaboration diagram for Photo\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPhoto_a7901cfbd6f89b90b68f2a5b00f8e82a9}\label{classPhoto_a7901cfbd6f89b90b68f2a5b00f8e82a9}} 
+{\bfseries Photo} (std\+::string name, std\+::string file\+Path, double latitude, double longitude)
+\item 
+\mbox{\Hypertarget{classPhoto_a6a5f8c3147539a529ab3a6bf276690ab}\label{classPhoto_a6a5f8c3147539a529ab3a6bf276690ab}} 
+{\bfseries Photo} (const \mbox{\hyperlink{classPhoto}{Photo}} \&other)
+\item 
+\mbox{\Hypertarget{classPhoto_abf3e0bbc8dbe20b79aab846eedfee74d}\label{classPhoto_abf3e0bbc8dbe20b79aab846eedfee74d}} 
+double {\bfseries get\+Latitude} () const
+\item 
+\mbox{\Hypertarget{classPhoto_a94319fce6b17eef205d25a15b44f3439}\label{classPhoto_a94319fce6b17eef205d25a15b44f3439}} 
+void {\bfseries set\+Latitude} (double latitude)
+\item 
+\mbox{\Hypertarget{classPhoto_af784f282da3cfab4a5e4c45b4da3b3f8}\label{classPhoto_af784f282da3cfab4a5e4c45b4da3b3f8}} 
+double {\bfseries get\+Longitude} () const
+\item 
+\mbox{\Hypertarget{classPhoto_a110586b178177c87da549b6de6d85fb5}\label{classPhoto_a110586b178177c87da549b6de6d85fb5}} 
+void {\bfseries set\+Longitude} (double longitude)
+\item 
+void \mbox{\hyperlink{classPhoto_a8bfc54f6bb210e3fcbd7b5c501e38053}{display}} (std\+::ostream \&os) const override
+\begin{DoxyCompactList}\small\item\em Display the multimedia object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPhoto_a98b55224b5f9bd016cb08aa2e9a64e46}{play}} () const override
+\begin{DoxyCompactList}\small\item\em Play the multimedia object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPhoto_a0072d71a24fb6865f4ab88d1beb83f32}{serialize}} (std\+::ostream \&os) const
+\begin{DoxyCompactList}\small\item\em Serialize the multimedia object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPhoto_af28440333a7879a942c16f493beae226}{deserialize}} (std\+::istream \&is)
+\begin{DoxyCompactList}\small\item\em Deserialize the multimedia object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPhoto_af28440333a7879a942c16f493beae226}\label{classPhoto_af28440333a7879a942c16f493beae226}} 
+\index{Photo@{Photo}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!Photo@{Photo}}
+\doxysubsubsection{\texorpdfstring{deserialize()}{deserialize()}}
+{\footnotesize\ttfamily void Photo\+::deserialize (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Deserialize the multimedia object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & The input stream to deserialize the information from. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classMultimedia_a3a1b5a97c0b151ea3ed70e254a47ad5f}{Multimedia}}.
+
+\mbox{\Hypertarget{classPhoto_a8bfc54f6bb210e3fcbd7b5c501e38053}\label{classPhoto_a8bfc54f6bb210e3fcbd7b5c501e38053}} 
+\index{Photo@{Photo}!display@{display}}
+\index{display@{display}!Photo@{Photo}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void Photo\+::display (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Display the multimedia object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & The output stream to display the information to. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classMultimedia_acc0ac0f04fd67622cff94bf883ec4c82}{Multimedia}}.
+
+\mbox{\Hypertarget{classPhoto_a98b55224b5f9bd016cb08aa2e9a64e46}\label{classPhoto_a98b55224b5f9bd016cb08aa2e9a64e46}} 
+\index{Photo@{Photo}!play@{play}}
+\index{play@{play}!Photo@{Photo}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily void Photo\+::play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Play the multimedia object. 
+
+This is a pure virtual function that must be implemented by derived classes. 
+
+Implements \mbox{\hyperlink{classMultimedia_a1fa4ae371afc516559955b38e0392acb}{Multimedia}}.
+
+\mbox{\Hypertarget{classPhoto_a0072d71a24fb6865f4ab88d1beb83f32}\label{classPhoto_a0072d71a24fb6865f4ab88d1beb83f32}} 
+\index{Photo@{Photo}!serialize@{serialize}}
+\index{serialize@{serialize}!Photo@{Photo}}
+\doxysubsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily void Photo\+::serialize (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Serialize the multimedia object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & The output stream to serialize the information to. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classMultimedia_a4b6622a1359f5beabf2c56fd126f1f45}{Multimedia}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Photo.\+h\end{DoxyCompactItemize}
